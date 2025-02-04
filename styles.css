@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -7,18 +8,23 @@
     border: none;
     box-sizing: border-box;
     list-style: none;
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-color: #e1e7ef;
+
 }
 
 
 .outermost-container{
     display: grid;
-    min-height: 100vh;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
     grid-template-areas:
     "sidebar header header"
     "sidebar main main";
+    height: fit-content;
 }
 
 .outermost-container #sidebar{
@@ -27,8 +33,9 @@
     gap: 1rem;
     display: grid;
     justify-items: center;
-    grid-template-rows: 1fr 2fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 5fr;
     background: #1c92d2;
+    height: min-content;
 
 }
 
@@ -106,6 +113,8 @@ span{
     "search search search profile"
     "greet greet menu menu";
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: white;
+
 
 }
 
@@ -261,23 +270,115 @@ span{
 
 .outermost-container #main{
     
+    margin-top: 15px;
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    /* grid-template-rows: 1fr 3fr; */
+    background-color: #e1e7ef;
+    padding: 2rem;
+    gap: 1rem;
 
 }
 
-#main .card-container{
+#main .projects-container h3{
     
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+#main .card-container{
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);    
-    row-gap: 8rem;
+    grid-template-columns: repeat(2, 1fr);    
+    grid-auto-rows: max-content;
+    gap: 1rem;
+
+}
+
+#main .card-container > *{
+
+    border-radius: 1rem;
+    border-left: 0.6rem solid#efb32e;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    min-height: 50%;
+}
+
+#main .card-container > div > h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#main .card-container > div > p{
+
+    color: #8a8a8a;
 }
 
 #main .announce-trend-container{
     
-    display: grid;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    height: min-content;
+
+}
+#main .announce-trend-container div{
+
+    margin-bottom: 2rem;
+
+}
+#main .announce-trend-container div h3{
+
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
 }
 
+#main .announce-trend-container div ul{
+    
+    background: white;
+    border-radius: 0.5rem;
+    padding: 3rem;
+
+}
+#main .announce-trend-container div:first-child ul li{
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(218, 213, 213);
+
+}
+#main .announce-trend-container div ul li h4{
+    
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+#main .announce-trend-container div:first-child ul li:last-child{
+    border: 0;
+}
+
+#main .announce-trend-container div:first-child ul li p{
+
+    color: #8a8a8a;
+}
+
+#main .announce-trend-container div:last-child ul{
+    padding: 2rem;
+
+}
+
+#main .announce-trend-container div:last-child ul li{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+#main .announce-trend-container div:last-child ul li div:last-child{
+    margin-top: 2px;
+    
+}
+
+#main .announce-trend-container div:last-child ul li div:last-child p:last-child{
+    color: #8a8a8a;
+}
 
