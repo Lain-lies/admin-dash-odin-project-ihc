@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -8,36 +9,90 @@
     font-family: "Red Hat Text", sans-serif;
 }
 
+
 .outermost-container{
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 2fr 10fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-areas:
-    "sidebar header header"
-    "sidebar main main"
-    "sidebar main main ";
+    "sidebar header"
+    "sidebar main";
 }
 
 .outermost-container #sidebar{
     
     grid-area: sidebar;
-    display: grid;
     gap: 1rem;
+    display: grid;
     justify-items: center;
+    grid-template-rows: 1fr 2fr 2fr 3fr;
+    background: #1c92d2;
 
+}
+
+#sidebar,
+span{
+    color: #303030;
+    font-weight: 800;
+}
+
+
+#sidebar > div:first-child{
+
+    padding: 2rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+}
+
+#sidebar > div:first-child svg{
+
+    margin-top: 0.3rem;
+}
+
+#sidebar ul{
+
+    border: 1px solid green;
+    /* display: grid; */
+    justify-self: baseline;
+    margin-left: 2rem;
+}
+
+#sidebar li{
+
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: black;
+    height:fit-content;
+    margin-bottom: 0.5rem;
 }
 
 #sidebar svg{
     
-    width: 8%;
-    height: 8%;
+    width: 0.9rem;
+    height: 0.9rem;
+    color:white;
 }
 
-#sidebar li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sidebar > div:first-child svg{
+    width: 2rem;
+    height: 2rem;
+    color:white;
+}
+
+#sidebar span, h2{
+    
+    color: white;
+}
+
+#sidebar h2{
+    
+    font-size: 1rem;
 }
 
 .outermost-container #header{
