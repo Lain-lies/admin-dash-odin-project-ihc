@@ -8,304 +8,295 @@
     <title>Admin</title>
 
 </head>
-<body>
+<body class = "outermost-container">
     
-    <div class = "outermost-container">
+    <div id = "sidebar">
+            
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="44" height="44">
+                <path d="M9 3a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2zm10 -4a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 -8a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2z"></path>
+                </svg>
+            
+            <h2>Dashboard</h2>
+
+        </div>
+
+        <ul>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="none" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
+                    <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                    </svg>
+                <span>Home</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="44" height="44" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor">
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                    </svg>
+                <span>Profile</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
+                    <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
+                    </svg>
+
+                <span>Messages</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="3">
+                    <path d="M4 12h.01"></path>
+                    <path d="M4 6h.01"></path>
+                    <path d="M4 18h.01"></path>
+                    <path d="M8 18h2"></path>
+                    <path d="M8 12h2"></path>
+                    <path d="M8 6h2"></path>
+                    <path d="M14 6h6"></path>
+                    <path d="M14 12h6"></path>
+                    <path d="M14 18h6"></path>
+                    </svg>
+                <span>History</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
+                    <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
+                    <path d="M13.5 6.5l4 4"></path>
+                    </svg>
+                    <span>Task</span>
+            </li>
+
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="none" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
+                    <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M19 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M12 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                    <path d="M12 7l0 4"></path>
+                    <path d="M6.7 17.8l2.8 -2"></path>
+                    <path d="M17.3 17.8l-2.8 -2"></path>
+                    </svg>
+                <span>Communities</span>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="black" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="0.5">
+                    <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                    </svg>
+                <span>Settings</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                    <path d="M4 13c.325 2.532 1.881 4.781 4 6"></path>
+                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2"></path>
+                    <path d="M4 5v4h4"></path>
+                    <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2"></path>
+                    <path d="M18 15v2a1 1 0 0 0 1 1h1"></path>
+                    <path d="M21 15v6"></path>
+                    </svg>
+                <span>Support</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                    <path d="M8 11m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
+                    <path d="M10 11v-2a2 2 0 1 1 4 0v2"></path>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                    </svg>
+                <span>Privacy</span>    
+            </li>
+        </ul>
+
+    </div>
+
+    <div id = "header">
         
-        <div id = "sidebar">
-            
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="44" height="44">
-                    <path d="M9 3a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2zm10 -4a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2zm0 -8a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2v-2a2 2 0 0 1 2 -2z"></path>
-                  </svg>
-                
-                <h2>Dashboard</h2>
+       
+        <div class = "search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                <path d="M21 21l-6 -6"></path>
+                </svg>
 
-            </div>
+            <form action="#">
+                <label for="query"></label>
+                <input type="search" id = "query" name = "query">
+            </form>
+        </div>
+      
 
+        <div class = "profile-container">
             <ul>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="none" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
-                        <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
-                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
-                      </svg>
-                    <span>Home</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="44" height="44" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor">
-                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                      </svg>
-                    <span>Profile</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
-                        <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
-                      </svg>
-
-                    <span>Messages</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="3">
-                        <path d="M4 12h.01"></path>
-                        <path d="M4 6h.01"></path>
-                        <path d="M4 18h.01"></path>
-                        <path d="M8 18h2"></path>
-                        <path d="M8 12h2"></path>
-                        <path d="M8 6h2"></path>
-                        <path d="M14 6h6"></path>
-                        <path d="M14 12h6"></path>
-                        <path d="M14 18h6"></path>
-                      </svg>
-                    <span>History</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
-                        <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4"></path>
-                        <path d="M13.5 6.5l4 4"></path>
-                      </svg>
-                      <span>Task</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                    <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
+                    <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+                    <path d="M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727"></path>
+                    <path d="M3 6.727a11.05 11.05 0 0 1 2.792 -3.727"></path>
+                    </svg>
+                
                 </li>
 
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="none" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="1">
-                        <path d="M12 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                        <path d="M5 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                        <path d="M19 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                        <path d="M12 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                        <path d="M12 7l0 4"></path>
-                        <path d="M6.7 17.8l2.8 -2"></path>
-                        <path d="M17.3 17.8l-2.8 -2"></path>
-                      </svg>
-                    <span>Communities</span>
+                    <div class = "image-container">
+                        <img src="./assets/cat.png" alt="profile picture">
 
+                    </div>
                 </li>
+
+                <li>Kitter Cats</li>
             </ul>
-
-            <ul>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="black" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="0.5">
-                        <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
-                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                      </svg>
-                    <span>Settings</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
-                        <path d="M4 13c.325 2.532 1.881 4.781 4 6"></path>
-                        <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2"></path>
-                        <path d="M4 5v4h4"></path>
-                        <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2"></path>
-                        <path d="M18 15v2a1 1 0 0 0 1 1h1"></path>
-                        <path d="M21 15v6"></path>
-                      </svg>
-                    <span>Support</span>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
-                        <path d="M8 11m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z"></path>
-                        <path d="M10 11v-2a2 2 0 1 1 4 0v2"></path>
-                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                      </svg>
-                    <span>Privacy</span>    
-                </li>
-            </ul>
-
         </div>
 
-        <div id = "header">
-            
-            <div>
-                <div class = "search-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
-                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
-                        <path d="M21 21l-6 -6"></path>
-                      </svg>
-    
-                    <form action="#">
-                        <label for="query"></label>
-                        <input type="search" id = "query" name = "query">
-                    </form>
-                </div>
-                
-            </div>
+        <div class = "greetings-container">
 
-            <div class = "profile-container">
-                <ul>
-                    <li>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
-                        <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
-                        <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
-                        <path d="M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727"></path>
-                        <path d="M3 6.727a11.05 11.05 0 0 1 2.792 -3.727"></path>
-                      </svg>
-                    
-                    </li>
-
-                    <li>
-                        <div class = "image-container">
-                            <img src="./assets/cat.png" alt="profile picture">
-
-                        </div>
-                    </li>
-
-                    <li>Kitter Cats</li>
-                </ul>
-            </div>
-
-            <div class = "greetings-container">
-
-                <div class = "image-container">
-                    <img src="./assets/cat.png" alt="profile picture">
-
-                </div>
-
-                <div id = "text-container">
-                    <p>Hi there,</p>
-                    <p>Kitters Cats (@kitters)</p>
-                </div>
-            </div>
-
-            <div class = "menu">
-
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
+            <div class = "image-container">
+                <img src="./assets/cat.png" alt="profile picture">
 
             </div>
 
+            <div id = "text-container">
+                <p>Hi there,</p>
+                <p>Kitters Cats (@kitters)</p>
+            </div>
         </div>
 
+        <div class = "menu">
 
-        <div id = "main">
-
-            <div class = "projects-container">
-                <div>
-                    <h3>Your Projects</h3>
-                </div>
-                <div class = "card-container">                
-                    <div>
-                        <h3>Super Cool Project</h3>
-                        <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
-                    </div>
-    
-                    <div>
-                        <h3>Super Cool Project</h3>
-                        <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
-                    </div>
-                
-                    <div>
-                        <h3>Super Cool Project</h3>
-                        <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
-                    </div>
-    
-                    <div>
-                        <h3>Super Cool Project</h3>
-                        <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
-                    </div>
-    
-                    <div>
-                        <h3>Super Cool Project</h3>
-                        <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
-                    </div>
-    
-                    <div>
-                        <h3>Super Cool Project</h3>
-                        <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
-                    </div>
-                </div>
-            </div>
-           
-
-            <div class = "announce-trend-container">
-
-                <div>
-                    
-                    <h3>Announcement</h3>
-                  
-                    <ul>
-                        <li>
-                            <h4>Site Maintenance</h4>
-                            <p>Mollit sint cupidatat ex enim laborum labore sit velit esse. Reprehenderit irure sit tempor esse dolore eu consectetur ea sunt culpa id nulla. Duis incididunt officia adipisicing Lorem pariatur occaecat pariatur aliqua laboris aliquip enim fugiat.</p>
-
-                        </li>
-
-                        <li>
-
-                            <h4>Community Share Day</h4>
-                            <p>Cillum excepteur dolore dolor officia velit minim dolor do aute irure occaecat ut. Nulla voluptate do dolore aute reprehenderit est mollit minim ex nostrud ex labore non velit. Consequat irure in non in commodo cillum amet esse ut commodo elit.</p>
-
-                        </li>                    
-            
-                        <li>
-
-                            <h4>Updated Privacy Policy</h4>
-                            <p>Mollit sint cupidatat ex enim laborum labore sit velit esse. Reprehenderit irure sit tempor esse dolore eu consectetur ea sunt culpa id nulla. Duis incididunt officia adipisicing Lorem pariatur occaecat pariatur aliqua laboris aliquip enim fugiat.</p>
-
-                        </li>
-
-                    </ul>
-                </div>
-                
-                <div>
-                    
-                    <h3>Trending</h3>
-    
-                    <ul>
-    
-                        <li> 
-                            <div class = "image-container">
-                                <img src="./assets/cat.png" alt="profile picture">
-                            </div>
-                            <div>
-                                <p>@kitters</p>
-                                <p>World Peace Builder</p>
-                            </div>
-
-                        </li>
-                        
-                        <li> 
-                            <div class = "image-container">
-                                <img src="./assets/cat.png" alt="profile picture">
-                            </div>
-                            <div>
-                                <p>@kitters</p>
-                                <p>Super Cool Project</p>
-                            </div>
-
-                        </li>
-    
-                        
-                        <li> 
-                            <div class = "image-container">
-                                <img src="./assets/cat.png" alt="profile picture">
-                            </div>
-                            <div>
-                                <p>@kitters</p>
-                                <p>Life Changing App</p>
-                            </div>
-
-                        </li>
-    
-                        
-                        <li> 
-                            <div class = "image-container">
-                                <img src="./assets/cat.png" alt="profile picture">
-                            </div>
-                            <div>
-                                <p>@kitters</p>
-                                <p>No Traffic Maker</p>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
-               
-            </div>
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">Share</button>
 
         </div>
 
     </div>
+
+    <div id = "main">
+
+        <div class = "card-container">         
+            <h3>Your Projects</h3>
+
+            <div class = "card">
+                <h3>Super Cool Project</h3>
+                <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
+            </div>
+
+            <div class = "card">
+                <h3>Super Cool Project</h3>
+                <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
+            </div>
+        
+            <div class = "card">
+                <h3>Super Cool Project</h3>
+                <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
+            </div>
+
+            <div class = "card">
+                <h3>Super Cool Project</h3>
+                <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
+            </div>
+
+            <div class = "card">
+                <h3>Super Cool Project</h3>
+                <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
+            </div>
+
+            <div class = "card">
+                <h3>Super Cool Project</h3>
+                <p>Veniam deserunt tempor culpa eu non ea et officia et ea enim. Magna nulla veniam minim mollit cupidatat exercitation. Culpa esse commodo magna veniam minim aliquip fugiat pariatur excepteur est sit.</p>
+            </div>
+        </div>
+
+        <div class = "announce-trend-container">
+
+            <div>
+                
+                <h3>Announcement</h3>
+                
+                <ul>
+                    <li>
+                        <h4>Site Maintenance</h4>
+                        <p>Irure deserunt cillum commodo sunt ullamco irure.</p>
+
+                    </li>
+
+                    <li>
+
+                        <h4>Community Share Day</h4>
+                        <p>Ipsum aliqua sit sunt proident sit minim cillum.</p>
+
+                    </li>                    
+        
+                    <li>
+
+                        <h4>Updated Privacy Policy</h4>
+                        <p>Laborum nulla amet proident eiusmod excepteur qui sint adipisicing.</p>
+
+                    </li>
+
+                </ul>
+            </div>
+            
+            <div>
+                
+                <h3>Trending</h3>
+
+                <ul>
+
+                    <li> 
+                        <div class = "image-container">
+                            <img src="./assets/cat.png" alt="profile picture">
+                        </div>
+                        <div>
+                            <p>@kitters</p>
+                            <p>World Peace Builder</p>
+                        </div>
+
+                    </li>
+                    
+                    <li> 
+                        <div class = "image-container">
+                            <img src="./assets/cat.png" alt="profile picture">
+                        </div>
+                        <div>
+                            <p>@kitters</p>
+                            <p>Super Cool Project</p>
+                        </div>
+
+                    </li>
+
+                    
+                    <li> 
+                        <div class = "image-container">
+                            <img src="./assets/cat.png" alt="profile picture">
+                        </div>
+                        <div>
+                            <p>@kitters</p>
+                            <p>Life Changing App</p>
+                        </div>
+
+                    </li>
+
+                    
+                    <li> 
+                        <div class = "image-container">
+                            <img src="./assets/cat.png" alt="profile picture">
+                        </div>
+                        <div>
+                            <p>@kitters</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+
 </body>
 </html>
