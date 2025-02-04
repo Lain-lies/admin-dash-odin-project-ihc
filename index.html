@@ -116,25 +116,64 @@
 
         <div id = "header">
             
-            <div class = "search-container">
+            <div>
+               
+                <div class = "search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                        <path d="M21 21l-6 -6"></path>
+                      </svg>
+    
+                    <form action="#">
+                        <label for="query"></label>
+                        <input type="search" id = "query" name = "query">
+                    </form>
+                </div>
                 
-                <form action="">
-                    <label for="">Search:</label>
-                    <input type="search">
-                </form>
             </div>
 
-            <div class = "name-notif-icon-container">
-                
-                Icon name
+            <div class = "profile-container">
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="44" height="44" stroke-width="2">
+                        <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6"></path>
+                        <path d="M9 17v1a3 3 0 0 0 6 0v-1"></path>
+                        <path d="M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727"></path>
+                        <path d="M3 6.727a11.05 11.05 0 0 1 2.792 -3.727"></path>
+                      </svg>
+                    
+                    </li>
+
+                    <li>
+                        <div class = "image-container">
+                            <img src="./assets/cat.png" alt="profile picture">
+
+                        </div>
+                    </li>
+
+                    <li>Kitter Cats</li>
+                </ul>
             </div>
 
             <div class = "greetings-container">
-                Hello (name)
+
+                <div class = "image-container">
+                    <img src="./assets/cat.png" alt="profile picture">
+
+                </div>
+
+                <div id = "text-container">
+                    <p>Hi there,</p>
+                    <p>Kitters Cats (@kitters)</p>
+                </div>
             </div>
 
             <div class = "menu">
-                menu
+
+                <button type="button">New</button>
+                <button type="button">Upload</button>
+                <button type="button">Share</button>
+
             </div>
 
         </div>

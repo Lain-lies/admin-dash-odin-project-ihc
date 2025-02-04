@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: none;
     box-sizing: border-box;
     list-style: none;
     font-family: "Red Hat Text", sans-serif;
@@ -13,11 +14,11 @@
 .outermost-container{
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 5fr;
     grid-template-areas:
-    "sidebar header"
-    "sidebar main";
+    "sidebar header header"
+    "sidebar main main";
 }
 
 .outermost-container #sidebar{
@@ -52,6 +53,7 @@ span{
     margin-top: 0.3rem;
 }
 
+
 #sidebar ul{
 
     border: 1px solid green;
@@ -66,7 +68,7 @@ span{
     justify-content: baseline;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: black;
     height:fit-content;
     margin-bottom: 0.5rem;
@@ -74,14 +76,14 @@ span{
 
 #sidebar svg{
     
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 1.2rem;
+    height: 1.2rem;
     color:white;
 }
 
 #sidebar > div:first-child svg{
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     color:white;
 }
 
@@ -92,16 +94,170 @@ span{
 
 #sidebar h2{
     
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .outermost-container #header{
     
     grid-area: header;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 1fr 2fr/ 2fr repeat(3, 1fr) ;
+    grid-template-areas: 
+    "search search search profile"
+    "greet greet menu menu";
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 }
+
+#header div:first-child{
+    
+    grid-area: search;
+}
+
+
+.search-container{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    gap: 0.5rem;
+    /* padding-top: 0.5rem; */
+    align-items: center;
+
+}
+
+.search-container svg{
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+.search-container form{
+
+    /* width: 70%;
+    height: 100%; */
+    display: flex;
+    width:fit-content;
+    align-items: center;
+
+}
+
+.search-container input[type = "search"]{
+
+    border-radius: 1rem;
+    border: 1px solid grey;
+    /* width: 44rem; */
+    width: 44rem;
+    height: 2rem;
+    background: #e1e7ef;
+ 
+}
+
+.search-container input[type = "search"]:focus{
+
+    outline: 1px solid blue;
+    padding: 0.5rem 1rem;
+}
+
+
+.profile-container ul{
+
+    grid-area: profile;
+    width: 80%;
+    height: 100%;
+    padding-top: 0.3rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.profile-container ul li svg{
+    
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.profile-container ul li:last-child{
+
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.image-container{
+
+    background: rgb(184, 184, 3);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 3rem;
+    height: 3rem;
+} 
+
+.greetings-container{
+    grid-area: greet;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    margin-left: 3rem;
+
+
+}
+
+.greetings-container .image-container{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 4rem;
+}
+
+.greetings-container .image-container img{
+    
+    width: 6rem;
+    height: 6rem;
+}
+
+#text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+#text-container p{
+    font-size: 1.5rem;
+}
+
+#text-container p:last-child{
+    
+    font-size: 3rem;
+}
+
+.menu{
+    
+    grid-area: menu;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu button{
+    width: 20%;
+    height: 30%;
+    border-radius: 2rem;
+    background-color: #1c92d2;
+    color:white;
+    font-size: 1.2rem;
+}
+
 
 .outermost-container #main{
     
@@ -115,7 +271,7 @@ span{
     
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);    
-    row-gap: 8remrem;
+    row-gap: 8rem;
 }
 
 #main .announce-trend-container{
@@ -123,4 +279,5 @@ span{
     display: grid;
     grid-template-rows: 2fr 2fr;
 }
+
 
